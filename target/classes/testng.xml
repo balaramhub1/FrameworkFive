@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CRM_2 Automation">
+
+<listeners>
+	<listener class-name="com.CRM2.util.Transformer"></listener>
+	<listener class-name="com.CRM2.util.ExtentReportOne"></listener>
+
+</listeners>
+
+  <test name="Regression">
+    <classes>
+      <class name="com.CRM2.loginpage.LoginPageTest"/>
+      <class name="com.CRM2.homepage.HomePageTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

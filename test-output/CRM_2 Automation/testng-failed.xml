@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [CRM_2 Automation]">
+  <listeners>
+    <listener class-name="com.CRM2.util.Transformer"/>
+    <listener class-name="com.CRM2.util.ExtentReportOne"/>
+  </listeners>
+  <test name="Regression(failed)">
+    <classes>
+      <class name="com.CRM2.homepage.HomePageTest">
+        <methods>
+          <include name="userNameDisplayedTest"/>
+          <include name="contactsLinkTest"/>
+          <include name="setUp"/>
+          <include name="homePageeTitleTest"/>
+        </methods>
+      </class> <!-- com.CRM2.homepage.HomePageTest -->
+      <class name="com.CRM2.loginpage.LoginPageTest">
+        <methods>
+          <include name="loginTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.CRM2.loginpage.LoginPageTest -->
+    </classes>
+  </test> <!-- Regression(failed) -->
+</suite> <!-- Failed suite [CRM_2 Automation] -->
